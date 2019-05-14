@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>React Hello World</title>
+    </head>
+    <body>
+        <div id="application-root"></div>
+
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script type="text/babel">
+            function App(props) {
+                console.log(props)
+                return (
+                    <main>
+                        <header>
+                            <h1>{props.resumeName}</h1>
+                            <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Sally's Professional Headshot" />
+                        </header>
+                        <section>
+                            <h2>Contact Info</h2>
+                            <address>
+                            Sally Student<br />
+                            Email: <a href="mailto:sally@students.co.uk?subject=Llama Herding Opportunity">sally@students.co.uk</a><br />
+                            Mobile: <a href="tel:+447911123456">+44 7911 123456</a>
+                            </address>
+                        </section>
+                        <section>
+                            <h2>Education</h2>
+                            <ul>
+                                <li><b>Leopard University</b>
+                                    <ul><li>BA in Big Cat Herding, 2012</li>
+                                    <li>Summa Cum Laude</li></ul>
+                                </li>
+                                <li><b>Kitty Cat College</b>
+                                    <ul><li>Certificate in House Cat Herding, 2014</li></ul>
+                                </li>                                
+                            </ul>
+                        </section>
+                        <section>
+                            <h2>Employment History</h2>
+                            <h3>Wild Cats Emporium</h3>
+                            <h4>Senior Lion Herder, 2017 - Present</h4>
+                            <ul>
+                                <li>Herded many lions</li>
+                                <li>Mentored the Cheetah herders</li>
+                                <li>"Top Cat" Award Winner, June 2018</li>
+                            </ul>
+                            <h4>Junior Large Cat Herder, 2016 - 2017</h4>
+                            <ul>
+                                <li>Experience with leopards, cheetahs, and lions</li>
+                                <li>Never once attacked</li>
+                            </ul>
+                            <h3>Kitty Cat Groomer</h3>
+                            <h4>Domesticated Cat Herder, 2013 - 2016</h4>
+                            <ul>
+                                <li>Beloved by all cats, including the grumpy ones</li>
+                                <li>Ranked 4.2/5 stars on customer service interactions</li>
+                            </ul>
+                        </section>
+                    </main>
+                );
+            }
+            ReactDOM.render(
+                <App resumeName='Sally Student' />,
+                document.querySelector('#application-root')
+            );
+        </script>
+    </body>
+</html>
