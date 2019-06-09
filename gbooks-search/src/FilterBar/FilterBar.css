@@ -1,0 +1,12 @@
+.filterbar {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+select {
+    margin: 0 5px;
+}
+
+.filterlabel {
+    margin: 0 0 0 10px;
+}

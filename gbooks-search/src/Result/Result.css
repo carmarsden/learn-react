@@ -1,0 +1,9 @@
+.result {
+    border: 1px black solid;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.thumbnail {
+    float: left;
+}

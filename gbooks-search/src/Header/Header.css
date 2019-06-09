@@ -1,0 +1,10 @@
+header {
+    background-color: black;
+    padding: 30px 0;
+}
+
+.pageheader {
+    color: white;
+    font-family: sans-serif;
+    font-size: 3em;
+}
