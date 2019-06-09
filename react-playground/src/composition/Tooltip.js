@@ -25,8 +25,6 @@ class TooltipClass extends React.Component {
     };
     
     render() {
-        console.log('Using a class component!')
-        console.log(this.props)
         return (
             <span className='Tooltip'>
                 <span

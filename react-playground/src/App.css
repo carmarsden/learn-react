@@ -1,17 +1,17 @@
 .App {
-/*    display: flex;
+    display: flex;
+    flex-direction: column;
     margin: 40px;
-    min-height: calc(100vh - 80px);
-*/
 }
+
 
 h1 {
     text-align: center;
 }
 
-div {
-    padding: 5px;
-    margin: 5px;
-    border: 2px black solid;
+.App > div {
+    padding: 10px;
+    margin: 3px;
+    border: 1px black solid;
     border-radius: 5px;
 }
