@@ -11,6 +11,7 @@ import RouletteGun from './state-drills/RouletteGun';
 import Tabs from './state/Tabs';
 import Accordion from './state-drills/Accordion';
 import DemonymApp from './demonymapp/demonymApp';
+import RegistrationForm from './registrationform/RegistrationForm';
 
 
 const firstTooltip = (
@@ -46,45 +47,47 @@ const sections = [
 function App() {
   return (
     <main className='App'>
-      <h1>Demonym App</h1>
-      <DemonymApp />
-      <Split>
-        <div className='thirds'>
-          <h1>Messages</h1>
-          <Messages name="Messages" unread={0}/>
-          <Messages name="Notifications" unread={10}/>
+        <h1>Basic Registration Form</h1>
+        <RegistrationForm />
+        <h1>Demonym App</h1>
+        <DemonymApp />
+        <Split>
+            <div className='thirds'>
+                <h1>Messages</h1>
+                <Messages name="Messages" unread={0}/>
+                <Messages name="Notifications" unread={10}/>
+            </div>
+            <div className='thirds'>
+                <h1>Hello World</h1>
+                <HelloWorld />
+            </div>
+            <div className='thirds'>
+                <h1>The Date</h1>
+                <TheDate />
+            </div>
+        </Split>
+        <h1>Tooltips</h1>
+        <div>
+            This is the {firstTooltip} content for the left Split. It contains <Tooltip message='one more tooltip message'>a couple</Tooltip> fun Tooltip examples.
         </div>
-        <div className='thirds'>
-          <h1>Hello World</h1>
-          <HelloWorld />
-        </div>
-        <div className='thirds'>
-          <h1>The Date</h1>
-          <TheDate />
-        </div>
-      </Split>
-      <h1>Tooltips</h1>
-      <div>
-        This is the {firstTooltip} content for the left Split. It contains <Tooltip message='one more tooltip message'>a couple</Tooltip> fun Tooltip examples.
-      </div>
-      <h1>Tabs</h1>
-      <Tabs tabs={tabsProp} />
-      <Split>
-        <div className='thirds'>       
-          <h1>Counter</h1>
-          <Counter step={3} />
-        </div>
-        <div className='thirds'>
-          <h1>Bomb</h1>
-          <Bomb />
-        </div>
-        <div className='thirds'>
-          <h1>Roulette Gun</h1>
-          <RouletteGun bulletInChamber={4} />
-        </div>
-      </Split>
-      <h1>Accordion</h1>
-      <Accordion sections={sections} />
+        <h1>Tabs</h1>
+        <Tabs tabs={tabsProp} />
+        <Split>
+            <div className='thirds'>       
+                <h1>Counter</h1>
+                <Counter step={3} />
+            </div>
+            <div className='thirds'>
+                <h1>Bomb</h1>
+                <Bomb />
+            </div>
+            <div className='thirds'>
+                <h1>Roulette Gun</h1>
+                <RouletteGun bulletInChamber={4} />
+            </div>
+        </Split>
+        <h1>Accordion</h1>
+        <Accordion sections={sections} />
     </main>
   );
 }
