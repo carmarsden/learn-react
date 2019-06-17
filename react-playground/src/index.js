@@ -8,8 +8,6 @@ import './index.css';
 
 
 ReactDOM.render(
-    <BrowserRouter>
-        <AppLang />
-    </BrowserRouter>,
+    <AppLang />,
     document.getElementById('root')
 );
