@@ -1,6 +1,7 @@
 {
     "version": 2,
     "name": "bookmarks-app",
+    "alias": "carmarsden-bookmarks-app",
     "routes": [
         {
           "src": "^/static/(.*)",
